@@ -9,6 +9,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 
 
+
 car_data = pd.read_csv('/home/sandy/Documents/laplateforme/projet_car/carData.csv')
 
 c = car_data.keys()
