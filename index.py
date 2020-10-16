@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-server=app.server
+
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
