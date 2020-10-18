@@ -51,7 +51,9 @@ menu = html.Div([
     html.Div(children='''
     La régression linéaire ajuste un modèle linéaire avec des coéfficients w pour minimiser la somme résiduelle des carrés entre les données prédites et les données réelles par l'approximation linéaireself.
     Elle minimise l'erreur totale.
-    Tandis que le SVM
+    Tandis que le SVM va choisir la séparation la plus nette possible entre deux classes, plus adaptée pour les modèles complexes.
+    Elle minimise l'erreur de marge.
+    Dans notre cas, la régression linéaire est légèrement plus adaptée.
     ''')
 
 ])
