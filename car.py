@@ -13,7 +13,7 @@ from sklearn import metrics
 import plotly.graph_objects as go
 
 
-car_data = pd.read_csv('/home/sandy/Documents/laplateforme/projet_CAR/carData.csv')
+car_data = pd.read_csv('carData.csv')
 
 c = car_data.keys()
 #print(c)

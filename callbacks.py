@@ -19,7 +19,6 @@ from layouts import D, SK, menu, choice, SC
     Input('b4', 'n_clicks')])
 
 def display_value(value):
-
     return choice(value)
 
 

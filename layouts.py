@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 from car import sk, sc, Svm
 
 
-car_data = pd.read_csv('/home/sandy/Documents/laplateforme/projet_CAR/carData.csv')
+car_data = pd.read_csv('carData.csv')
 
 
 def choice(value):
