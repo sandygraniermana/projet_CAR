@@ -23,7 +23,8 @@ def choice(value):
     else:
         value == 'graph1'
         return SK
-
+    #return D,SC,SV,SK
+    #
 
 menu = html.Div([
     html.H1(children='Projet : Achat d’une voiture', style={
@@ -44,6 +45,7 @@ menu = html.Div([
     dcc.Link(html.Button('graphe sklearn', id='b2', n_clicks=0, value='graph1'), href='/apps/graph_sklearn'),
     dcc.Link(html.Button('graphe svm', id='b4', n_clicks=0, value='graph3'), href='/apps/graph_svm')),
 ),
+    html.Div(id='res'),
     html.H2(children='Conclusion', style={
             'text': '#7FDBFF'
         }),
@@ -71,7 +73,8 @@ D = html.Div([
     data=car_data.to_dict('records')),
 
     html.Div(id = 'des'),
-    dcc.Link(html.Button('Presentation des données', id='b1', n_clicks=0, value='describe_'), href='/apps/describe')
+    #dcc.Link(html.Button('Presentation des données', id='b1', n_clicks=0, value='describe_'), href='/apps/describe'),
+    html.Div(id='b1-res')
 ])
 
 
@@ -86,7 +89,8 @@ SK = html.Div([
     id='plot_sk',
     figure = sk()),
     html.Div(id = 'graph_sk'),
-    dcc.Link(html.Button('graphe sklearn', id='b2', n_clicks=0, value='graph1'), href='/apps/graph_sklearn')
+    #dcc.Link(html.Button('graphe sklearn', id='b2', n_clicks=0, value='graph1'), href='/apps/graph_sklearn'),
+    html.Div(id='b2-res')
 ])
 
 
@@ -101,7 +105,8 @@ SC = html.Div([
     id='plot_sc',
     figure = sc()),
     html.Div(id = 'graph_sc'),
-    dcc.Link(html.Button('graphe scipy', id='b3', n_clicks=0, value='graph2'), href='/apps/graph_scipy')
+    #dcc.Link(html.Button('graphe scipy', id='b3', n_clicks=0, value='graph2'), href='/apps/graph_scipy'),
+    html.Div(id='b3-res')
 ])
 
 
@@ -115,7 +120,8 @@ SV = html.Div([
     id='plot_sv',
     figure = sc()),
     html.Div(id = 'graph_sv'),
-    dcc.Link(html.Button('graphe svm', id='b4', n_clicks=0, value='graph3'), href='/apps/graph_svm')
+    #dcc.Link(html.Button('graphe svm', id='b4', n_clicks=0, value='graph3'), href='/apps/graph_svm'),
+    html.Div(id='b4-res')
 ])
 
 

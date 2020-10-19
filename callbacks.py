@@ -9,14 +9,19 @@ from layouts import D, SK, menu, choice, SC
 
 
 @app.callback(
-    [Output('b1', 'children'),
-    Output('b2', 'children'),
-    Output('b3', 'children'),
-    Output('b4', 'children')],
-    [Input('m', 'value')])
+    [Output('b1-res', 'children'),
+    Output('b2-res', 'children'),
+    Output('b3-res', 'children'),
+    Output('b4-res', 'children')],
+    [Input('b1', 'n_clicks'),
+    Input('b2', 'n_clicks'),
+    Input('b3', 'n_clicks'),
+    Input('b4', 'n_clicks')])
 
 def display_value(value):
+
     return choice(value)
+
 
 
 @app.callback(
