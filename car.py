@@ -42,7 +42,7 @@ sp = car_data['Selling_Price'].values
 #################################################################
 #Question 3
 
-bd = sqlite3.connect('/home/sandy/Documents/laplateforme/projet_car/base_car.db')
+bd = sqlite3.connect('base_car.db')
 #
 cursor = bd.cursor()
 # cursor.execute('CREATE TABLE CARS (Car_Name, Year, Selling_Price, Present_Price, Kms_Driven, Fuel_Type, Seller_Type, Transmission, Owner)')
