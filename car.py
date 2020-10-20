@@ -45,10 +45,10 @@ sp = car_data['Selling_Price'].values
 bd = sqlite3.connect('base_car.db')
 #
 cursor = bd.cursor()
-# cursor.execute('CREATE TABLE CARS (Car_Name, Year, Selling_Price, Present_Price, Kms_Driven, Fuel_Type, Seller_Type, Transmission, Owner)')
-# bd.commit()
+#cursor.execute('CREATE TABLE CARS (Car_Name, Year, Selling_Price, Present_Price, Kms_Driven, Fuel_Type, Seller_Type, Transmission, Owner)')
+#bd.commit()
 
-#car_data.to_sql('CARS', con=bd, if_exists='append', index=False)
+# car_data.to_sql('CARS', con=bd, if_exists='append', index=False)
 
 r = cursor.execute("SELECT Present_Price FROM CARS")
 res = cursor.fetchall()
